@@ -13,3 +13,12 @@ add_executable(memory_allocation_simulator
 target_include_directories(memory_allocation_simulator
     PRIVATE include
 )
+
+add_executable(memory_allocation_tests
+    tests/ArenaTests.cpp
+    src/Arena.cpp
+)
+
+target_include_directories(memory_allocation_tests
+    PRIVATE include
+)
